@@ -1,0 +1,86 @@
+\documentclass{resume}
+
+\DeclareSymbolFont{extraup}{U}{zavm}{m}{n}
+\DeclareMathSymbol{\varheart}{\mathalpha}{extraup}{86}
+\DeclareMathSymbol{\vardiamond}{\mathalpha}{extraup}{87}
+
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\pagestyle{plain}
+
+\begin{document}
+
+  \begin{rSection}{Career history}
+    \begin{rSubsection}{Qualcomm UK Ltd}{May 2014 - Present}{}{}
+      %\item
+      %\begin{description}
+	\item[Summary]
+
+		TODO be much more specific and detailed and include dates and literally all the projects
+
+	  I am a member of the security team and I have contributed to writing designing and testing different kinds of software:
+	  Android applications for showcasing services and libraries to our b2b customers,
+	  Android services, 
+	  Java and JNI libraries, 
+	  C/C++ libraries such as PKCS11 compliant cryptographic libraries,
+	  C/C++ system daemons,
+	  trusted applications for Qualcomm proprietary TrustZone based real time operating system,
+	  python programs for manipulation of binary files and for collecting analysing and visualising data
+
+	  On the management side I was responsible for getting up to speed a new hire
+	\item[Example]
+	  One of my tangible contributions to the company during my stay are in the Sharp AQUOS ZETA SH-03G.
+	  It is a smartphone using Qualcomm MSM8994 chipset and running Android 5.0 Lollipop. 
+	  The device is equipped with a biometric authentication sensor, specifically
+	  Qualcomm's 3D fingerprint technology.
+	  I contributed by writing some software, i.e. a Java service, a Java library and a JNI library
+	  that are integrated in the Qualcomm Snapdragon Sense ID biometrics platform and they
+	  are part of an authentication and mobile payment service offered by DOCOMO (Japan's predominant mobile operator).
+	  The platform can integrate as well with third-party biometric sensors and it is a certified
+	  implementation of the FIDO (Fast IDentity Online) protocol.
+      %\end{description}
+    \end{rSubsection}
+
+    \begin{rSubsection}{eBay International Marketing GmbH}{September 2013 - March 2014}{}{Z\"urich, Switzerland}
+      %\item
+	%\begin{description}
+	  \item[Summary]  
+	    I was an intern at eBay and I was working mostly as a web developer. 
+	    We used HTML5, JavaScript and AngularJS for the front-end. 
+	    The back-end used Java or Scala with the Play framework and was backed by a MySQL database or a MongoDB. 
+	    Other technologies we used are: 
+	    	TestNG for testing the back-end; 
+		Jenkins for continuous integration; 
+		Gerrit for code review; 
+	    	GIT as version control system; 
+		maven or sbt for build automation;
+		websocket for communication among front-end and back-end.	  
+	  \item[Example]
+	    I am particularly proud of a project called TweetMiner, 
+	    I and two other interns started this project from scratch,
+	    it is a web application that uses data mining, pattern recognition and sentiment analysis techniques on tweets to find out how people feel about products they bought on eBay. 
+	    %We wrote the back-end  in Scala, 
+	    %the front-end in HTML5, JavaScript and AngularJS.
+	    %We used TDD as development process.
+	%\end{description}
+    \end{rSubsection}
+
+    \begin{rSubsection}{ISTI - National Research Council of Italy}{February 2009 - October 2009}{}{Pisa, Italy}
+      \item
+	I built a deductive system for an extension of RDF with fuzzy logic under the supervision of a senior researcher Umberto Straccia.
+	%The system is an implementation of the deductive system described in the paper 
+	%''Umberto Straccia. A Minimal Deductive System for General Fuzzy RDF. Proceedings of the 3rd International Conference on Web Reasoning and Rule Systems (RR-09), 2009.''
+	The work I have done include:
+	an implementation of a new language fuzzyRDF as a particular subset of RDF,
+        a mechanisms of storage of RDF knowledge bases as XML files,
+        a graphical and textual interface to the system,
+	a proper configuration of the deductive rules of the Apache Jena reasoner,
+        definition of the syntax of an apposite new query language: Fuzzy RDF Query language (FuRQL)
+	and implementation in Java of a parser and a compiler from FuRQL to the SPARQL language \\ 
+    \end{rSubsection}
+  \end{rSection}
+
+
+\end{document}
