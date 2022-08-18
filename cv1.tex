@@ -1,0 +1,158 @@
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003 David J. Grant <dgrant@ieee.org> http://www.eng.uwaterloo.ca/~djgrant
+%
+%This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/1.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+\documentclass[letterpaper,11pt]{article}
+
+%-----------------------------------------------------------
+%Margin setup
+\setlength{\voffset}{0.75in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\paperheight}{11in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\textheight}{11in}
+\setlength{\textheight}{9.5in}
+\setlength{\topmargin}{-0.25in}
+\setlength{\textwidth}{7in}
+\setlength{\topskip}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\evensidemargin}{-0.25in}
+%-----------------------------------------------------------
+%\usepackage{fullpage}
+\usepackage{shading}
+\usepackage{url}
+%\textheight=9.0in
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \parashade[.9]{sharpcorners}{\textbf{#1 \vphantom{p\^{E}}}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+\textbf{\Large 王孟秋}  & 650-704-5286\\
+Gates Building, Stanford Univ. &  mengqiu@cs.stanford.edu \\
+Stanford, CA, 94305,  & http://www.cs.stanford.edu/$\sim$mengqiu/ \\
+\end{tabular*}
+\\
+
+%\vspace{0.2in}
+%\begin{large}\textbf{Objective}\end{large}\\
+%To obtain a research internship position in NLP and/or Machine Learning for Summer 2008
+
+\vspace{0.1in}
+\begin{large}\textbf{教育背景}\end{large}\\
+\begin{itemize}
+\item
+	\ressubheading{Stanford University}{Stanford, CA}{PhD, Computer Science}{Sep. 2007 - Now}
+\item
+	\ressubheading{Carnegie Mellon University}{Pittsburgh, PA}{M.S., Computer Science(GPA: 3.89)}{Sep. 2005 - Aug. 2007}
+\item
+	\ressubheading{University of Otago}{Dunedin, New Zealand}{B.S. Computer Science (GPA: 4.05)}{Feb. 2002 - Feb. 2005}
+\item
+	\ressubheading{University of Otago}{Dunedin, New Zealand}{B.App.Sc. Telecommunications (4 yrs) (GPA:Overall 3.89, Major 4.02)}{Feb. 2002- Dec. 2004}
+\item
+	\ressubheading{University of Texas at Austin}{Austin, TX}{Exchange (GPA: 4.0)}{Aug. 2003 - Dec. 2003}
+\item
+	\ressubheading{Beijing University of Aeronautics \& Astronautics}{Beijing, China}{Freshman Year (GPA: 79.2\%)}{Sep. 2000 - Jun. 2001}
+\end{itemize}
+
+\vspace{0.1in}
+\begin{large}\textbf{Work Experience}\end{large}\\
+\begin{itemize}
+\item
+	\ressubheading{Facebook}{Palo Alto, PA}{Data Scientist Intern}{Jun. 2008- Sep. 2008}
+	\begin{itemize}
+		\resitem{Re-engineered an internal ML tool to scale up to giga-byte load per day; Implemented a map-reduce BrowseRank algorithm for spam page detection; Implemented an online word sense disambiguation algorithm for clustering words with similar sense}
+	\end{itemize}
+\item
+	\ressubheading{Stanford University}{Stanford, PA}{Graduate Reseach Assistant}{Aug. 2007- now}
+\item
+	\ressubheading{Carnegie Mellon University}{Pittsburgh, PA}{Graduate Reseach Fellow}{Aug. 2005 - Aug. 2007}
+\item
+	\ressubheading{University of Otago}{Dunedin, NZ}{Reseach Fellow}{Dec 2004 - May. 2005}
+\item
+	\ressubheading{Computer Science Laboratory, Australian National University}{Canberra, Australia}{Summer Research Scholar}{Dec. 2003 - Feb. 2004}
+\item
+	\ressubheading{Kognition Co. Ltd.}{Dunedin, NZ}{Software Engineer and Business Manager of Asia Region}{Jun. 2003 - Dec. 2004}
+	\begin{itemize}
+		\resitem{Implemented one of the first Microsoft SPOT watch C\# applications called TrailSPOTter, won a microsoft CFP and \$10,000 cash award, later acquired by Integen Co.}
+	\end{itemize}
+\end{itemize}
+
+\vspace{0.1in}
+\begin{large}\textbf{Selected Publications}\end{large}\\
+\begin{itemize}
+\item M. Wang, N. Smith and T. Mitamura, What is the Jeopardy Model? A Quasi-synchronous Grammar for Question Answering, \textit{In Proceedings of EMNLP/CoNLL '07}. (\textbf{Nominated for Best Paper Award})
+
+\item M. Wang, K. Sagae and T. Mitamura, A Fast, Accurate Deterministic Parser for Chinese, \textit{In Proceedings of COLING-ACL '06}.
+
+\item More on my homepage: http://www.cs.stanford.edu/$\sim$mengqiu
+
+\end{itemize}
+
+%\vspace{1in}
+\pagebreak
+\begin{large}\textbf{Awards}\end{large}\\
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		Stanford Graduate Fellowship & 2007-2010\\
+		ACL/HCSNet Scholarship & 2006\\
+		Research Fellowship (CMU) & 2005-2007\\
+		International Master's Scholarship (Otago University) & 2005\\
+		\mbox{     -}\mbox{  }\small{awarded to 4 exceptional international Master's student each year, only 1 for science division} \\
+		Summer Research Scholarship (Otago Univeristy) & 2004 \\
+		Summer Research Scholarship (Australian National University) & 2003 \\
+		BitWISE 2K4 Algorithm Intensive Online Programming Contest Awardee & 2003 \\
+		\mbox{     -}\mbox{  }\small{placed 20th among 2800 participants} \\
+		Beijing Univ of Astro \& Aero Freshman Scholarship & 2000\\
+\end{tabular*}
+
+\vspace{0.2in}
+\begin{large}\textbf{Skills}\end{large}\\
+\vspace{-0.2in}
+\begin{description}
+\item[Programming Languages:]
+Java, Python, PHP, Javascript, MatLab, C/C++, Perl
+\item[Natural Languages:]
+Mandarin, English, Cantonese, Spanish(Beginner)
+\end{description}
+
+\vspace{0.2in}
+\begin{large}\textbf{Interests}\end{large}\\
+\vspace{-0.2in}
+\begin{description}
+\item[Academic:] Machine Learning, Statistics, NLP, IR
+\item[Sports:] basketball, running, snowboarding, swimming, rock-climbing
+\item[Musical:] enthusiastic classical guitar learner
+\item[Membership:] ACM,ACL
+\item[Other:] novels and Chinese history; lauguage learning.
+\end{description}
+
+
+\vspace{0.2in}
+\begin{large}\textbf{Primary References}\end{large}\\
+\vspace{-0.2in}
+\begin{description}
+\item[Dr. Christopher Manning] Associate Professor, Stanford University, manning@cs.stanford.edu
+\item[Dr. Noah Smith] Assistant Professor, Carnegie Mellon University, nasmith@cs.cmu.edu
+\item[Dr. Luo Si] Assistant Professor, Purdue University, lsi@cs.purdue.edu
+\item[Dr. Teruko Mitamura] Research Professor, Carnegie Mellon University, teruko@cs.cmu.edu
+\item[Dr. Martin Purvis] Professor, Otago University, mpurvis@infoscience.otago.ac.nz
+\end{description}
+\end{document}
