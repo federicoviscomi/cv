@@ -1,42 +1,23 @@
-%this assumes that res_yy.sty is in some path
 \documentstyle[hyperref, margin, line]{res_yy}
 \hypersetup{backref,pdfpagemode=Full,colorlinks=true,backref}
-\addtolength{\oddsidemargin}{-0.45in}
+\addtolength{\oddsidemargin}{-0.43in}
 \addtolength{\voffset}{-0.30in}
 \addtolength{\textwidth}{1.00in} \addtolength{\textheight}{1.50in}
 \renewcommand{\namefont}{\LARGE\emph}
 \def\Cplusplus{{\rm C\raise.5ex\hbox{\small ++}}}
 \def\CSharp{{\rm C\raise.5ex\hbox{\small \#}}}
-% 'st' 'nd' 'rd' 'th' superscripts for numbers
 \def\first{{\raise.5ex\hbox{\small st}}}
 \def\second{{\raise.5ex\hbox{\small nd}}}
 \def\third{{\raise.5ex\hbox{\small rd}}}
 \def\fourth{{\raise.5ex\hbox{\small th}}}
-
-
-%%
-%% starting the actual document
-%%
-
 \begin{document}
-
-%the name in big fonts at the top of resume
-%this is left aligned
-    \name{Federico Viscomi}
-
-%this is right aligned
-    \address{
-        https://www.linkedin.com/in/federicoviscomi/ \ \ \ \ \ federicoviscomi@gmail.com \ \ \ \ \ +447801273266
-    }
-
-    \begin{resume}
-
-        \section{\textsc{Summary}}
-        I have a good background in foundational topics of computer science
-        and a fair amount of experience with agile software development working at the core business of world class employers.
-        I like to see my self as kind, adaptable and open to changes.
-
-
+\name{Federico Viscomi}
+\address{federicoviscomi@gmail.com \ \ \ \ \ +447801273266 \ \ \ \ \ \ Updated \today}
+\begin{resume}
+\section{\textsc{Summary}}
+I have a good background in foundational topics of computer science
+and a fair amount of experience with agile software development working at the core business of world class employers.
+I like to see my self as kind, adaptable and open to changes.
         % I am a passionate software engineer with a strong background in computer science.
         % It has been more than one year at the time of writing since I started working as
         % Android application and system developer on software that is part of the
@@ -56,23 +37,35 @@
 %%
 %% the meat of the resume starts now
 %%
-
-        \begin{formatb}
-            \employer{l}\title{r}\\
-            \location{l}\dates{r}\\
-            \body\\
-        \end{formatb}
-
+\begin{formatb}
+\employer{l}\title{r}\\
+\location{l}\dates{r}\\
+\body\\
+\end{formatb}
 
         \section{\textsc{Work Experience}}
-
         \employer{\textbf{Finastra}}
         \title{Senior software developer}
         \location{Nottingham, UK}
         \dates{January 2018 -- Present}
         \begin{position}
-            Developing a website and a set of tools for exchange of SWIFT messages.
-            The languages and technologies used are: Maven, C, Java 8, Hibernate, Java EE, PostgreSQL, XML, Tomcat, Jboss, ZK, Apache Solr, Keycloak.
+            My main task is developing a system for exchange of financial messages on many networks such as SWIFT, SIC/euroSIC, SECOM, SEPA, FED/CHIPS.
+            The languages and technologies used are: %Maven, Java 8, Hibernate, Java EE, PostgreSQL, XML, Tomcat, Jboss, ZK, Apache Solr, Keycloak, Kafka, microservices, docker, ANTLR.
+            Core Java 8, JEE, 
+            Wildfly/EAP 7, Tomcat
+            Maven, Spring, Hibernate/JPA, 
+            Junit,
+            JMS,
+            Oracle database, PostgreSQL,
+            s Artifactory/Jenkins,
+            SOLR/Lucene,
+            Antlr,
+            Google protocol buffers
+            ZKoss,
+            AngularJS,
+            XML,
+            Keycloak,
+            Kafka
         \end{position}
 
 
@@ -288,10 +281,10 @@
         Software Product Management Specialization, %from University of Alberta,
         Microservices with Node JS and React,
         %SQL and PostgreSQL: The Complete Developer's Guide,
-        Go: The Complete Developer's Guide (Golang),
+        Go: The Complete Developer's Guide,
         Modern React with Redux,
         Docker and Kubernetes: The Complete Guide,
-        Ultimate Rust Crash Course
+        %Ultimate Rust Crash Course
 
         \textbf{University of Bologna} \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 2010 - 2013 \\
         MSc in Computer Science  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Graduated with Highest Honors\\
@@ -304,8 +297,9 @@
         Artificial intelligence,
         Digital signal processing,
         Advanced algorithms
-        Web architectures and patterns with a full stack website programming project in Java and GWT,
-        Functional programming in OCaml, Computational mathematics with Wolfram Mathematica
+        Web architectures and patterns %with a full stack website programming project in Java and GWT
+        Functional programming in OCaml, 
+        Computational mathematics with Wolfram Mathematica
 
         \textbf{University of Pisa} \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 2006 - 2009 \\
         Bachelor of Science in Computer Science. Courses include:
@@ -349,5 +343,5 @@
         %\section{footer}
 
     \end{resume}
-    Updated \today
+    
 \end{document}
