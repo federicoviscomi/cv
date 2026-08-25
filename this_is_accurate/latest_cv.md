@@ -77,15 +77,16 @@ Comfortable working across the full software lifecycle, from architecture and im
 **1Spatial / VertiGIS**  
 **2023 – Present**
 
-- Full-stack development on geospatial software products.
-- Backend development using Java, Spring Boot and PostgreSQL/PostGIS.
-- Frontend development with React, TypeScript and Material UI.
-- Upgraded major libraries including Jackson and MUI.
-- Built automated testing using JUnit and Testcontainers.
-- Worked with CI/CD pipelines using Jenkins.
+- Designed and helped build the microservices architecture for TMPA (1Streetworks), a geospatial traffic management planning platform: around ten containerized Spring Boot services deployed in load-balanced clusters behind a central application gateway handling authentication, multi-tenant data isolation and secure proxying of external APIs (OS Data Hub, what3words).
+- Built the integration layer with 1Integrate, a third-party rules engine, orchestrating automated "auto-draft" generation of traffic management plans and managing versioned rules packaging and deployment.
+- Designed a geospatial ETL pipeline ingesting Ordnance Survey, OpenStreetMap, NaPTAN and Street Manager roadworks data into PostgreSQL/PostGIS reference databases, with checksum-verified, quarterly-versioned data releases and rollback support.
+- Built a horizontally scalable PDF generation service (headless Chrome, Redis-backed job queue) and a vector-tile map serving layer (Martin, PostGIS, MBTiles) underpinning core document and map rendering features.
+- Built a bulk automated regression-testing framework enabling the rules team to validate rules logic against thousands of generated test plans.
+- Full-stack development with React, TypeScript and Material UI on the frontend and Java/Spring Boot on the backend; upgraded major libraries including Jackson and MUI; built automated testing using JUnit and Testcontainers.
+- Built and maintained the CI/CD toolchain: Bitbucket Pipelines for testing and static analysis, Jenkins for snapshot/release builds, Nexus as the Maven and Docker registry, and Azure DevOps pipelines/Azure Container Registry for deployment to production.
 - Participated in architecture discussions, code reviews and mentoring.
 
-**Technologies:** Java, Spring Boot, React, TypeScript, PostgreSQL, PostGIS, Flyway, Docker, Jenkins, Maven
+**Technologies:** Java, Spring Boot, React, TypeScript, PostgreSQL, PostGIS, Redis, AWS SNS, Docker, Flyway, Jenkins, Bitbucket Pipelines, Azure DevOps, Maven, Martin/MapLibre, GraphHopper
 
 ---
 
